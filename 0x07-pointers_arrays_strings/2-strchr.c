@@ -1,4 +1,4 @@
-#include "main.h"
+#include "holberton.h"
 #define NULL 0
 /**
 * _strchr - function
@@ -10,17 +10,16 @@
 */
 char *_strchr(char *s, char c)
 {
-  for (;; s++)
-  {
-
-    if (*s == c)
-    {
-      return (s);
-    }
-    if (*s == c && c == NULL)
-      return (s);
-    if (*s == NULL)
-      break;
-  }
-  return (NULL);
+        for (;; s++)
+        {
+                if (*s == c)
+                {
+                        return (s);
+                }
+         if (*s == c && c == NULL)
+                return (s);
+         if (*s == NULL)
+                break;
+        }
+        return (NULL);
 }
