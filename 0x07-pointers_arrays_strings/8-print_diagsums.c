@@ -22,7 +22,7 @@ void print_diagsums(int *a, int size)
 			if (r == c)
 			{
 				loc = ((size * r) + c);
-				sum = *(a + loc) + sum;
+				sum1 = *(a + loc) + sum;
 			}
 		}
 	}
