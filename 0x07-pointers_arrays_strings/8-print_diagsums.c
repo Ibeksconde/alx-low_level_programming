@@ -24,6 +24,11 @@ void print_diagsums(int *a, int size)
 				loc = ((size * r) + c);
 				sum1 = *(a + loc) + sum;
 			}
+			if (c == (size - 1) - r)
+			{
+				loc = ((size * r) + c);
+				sum1 = *(a + loc) + sum1;
+			}
 		}
 	}
 	printf("%d", sum);
