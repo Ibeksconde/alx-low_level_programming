@@ -17,17 +17,12 @@ void print_diagsums(int *a, int size)
 
 	for (r = 0; r <= (size - 1); r++)
 	{
-		for (c = 0; c <= (size - 1); c++)
+		for (c = o; c <= (size - 1); c++)
 		{
 			if (r == c)
 			{
 				loc = ((size * r) + c);
 				sum = *(a + loc) + sum;
-			}
-			if (c == (size - 1) - r)
-			{
-				loc = ((size * r) + c);
-				sum1 = *(a + loc) + sum1;
 			}
 		}
 	}
